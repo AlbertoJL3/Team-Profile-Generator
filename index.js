@@ -104,22 +104,22 @@ inquirer.prompt(questions).then((answers) => {
 });
 
 function generateHTML(employee) {
-  let html = `
-    <div>
-      <h2>${employee.getName()}</h2>
-      <p>ID: ${employee.getId()}</p>
-      <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></p>
-      <p>Role: ${employee.getRole()}</p>
-  `;
-  if (employee.getRole() === "Manager") {
-    html += `
-      <p>Office Number: ${employee.officeNumber}</p>
+    let html = `
+      <div>
+        <h2>${employee.getName()}</h2>
+        <p>ID: ${employee.getId()}</p>
+        <p>Email: <a href="mailto:${employee.getEmail()}">${employee.getEmail()}</a></p>
+        <p>Role: ${employee.getRole()}</p>
     `;
-  } else if (employee.getRole() === "Engineer") {
-    html += `
-      <p>GitHub: <a href="https://github.com/${employee.github}">${employee.github}</a></p>
-    `;
-  } else if (employee.getRole() === "Intern") {
-    html += `<p>School: ${employee.school}</p>`;
-    }
-};
+    if (employee.getRole() === "Manager") {
+      html += `
+        <p>Office Number: ${employee.officeNumber}</p>
+      `;
+    } else if (employee.getRole() === "Engineer") {
+      html += `
+        <p>GitHub: <a href="https://github.com/${employee.github}">${employee.github}</a></p>
+      `;
+    } else if (employee.getRole() === "Intern") {
+      html += `<p>School: ${employee.school}</p>`;
+      }
+  };
