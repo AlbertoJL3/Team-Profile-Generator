@@ -1,7 +1,6 @@
 {
-  "name": "Team-Profile-Generator",
   "version": "1.0.0",
-  "description": "Team Information Management system using inquirer for CLI.",
+  "description": "Team Information Management system using inquirer for ",
   "main": "index.js",
   "scripts": {
     "start": "node index",
