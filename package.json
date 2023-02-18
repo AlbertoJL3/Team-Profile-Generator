@@ -1,0 +1,20 @@
+{
+  "name": "Team-Profile-Generator",
+  "version": "1.0.0",
+  "description": "Team Information Management system using inquirer for CLI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "inquirer": "8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
